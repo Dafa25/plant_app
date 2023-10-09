@@ -10,7 +10,6 @@ export 'package:plant_app/ui/page/chart_page.dart';
 export 'package:plant_app/ui/page/detail_produk_plant.dart';
 export 'package:plant_app/ui/page/favorite_page.dart';
 export 'package:plant_app/ui/page/home_page.dart';
-export 'package:plant_app/ui/page/login_page.dart';
 export 'package:plant_app/ui/page/onboarding_page.dart';
 export 'package:plant_app/ui/page/profile_page.dart';
 export 'package:plant_app/ui/page/root_page.dart';

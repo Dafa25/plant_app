@@ -112,48 +112,6 @@ class Plant {
         decription:
             'Tanaman Meadow Sage, juga dikenal sebagai Salvia pratensis, adalah tanaman berbunga yang mempesona dengan bunga-bunga biru-lavender yang indah yang tumbuh dalam rangkaian panjang di musim panas.',
         isSelected: false),
-    Plant(
-        plantId: 6,
-        price: 19,
-        category: 'Garden',
-        plantName: 'Plumbago',
-        size: 'Small',
-        rating: 4.2,
-        humidity: 46,
-        temperature: '23 - 26',
-        imageURL: 'assets/images/plant7.png',
-        isFavorated: false,
-        decription:
-            'Tanaman Plumbago, atau Plumbago auriculata, adalah tanaman semak yang menampilkan bunga-bunga yang cantik berwarna biru muda atau putih di musim panas hingga awal musim gugur, Tanaman ini sering digunakan dalam taman dan lansekap sebagai tanaman hias perbatasan atau pagar hidup.',
-        isSelected: false),
-    Plant(
-        plantId: 7,
-        price: 23,
-        category: 'Garden',
-        plantName: 'Tritonia',
-        size: 'Medium',
-        rating: 4.5,
-        humidity: 34,
-        temperature: '21 - 24',
-        imageURL: 'assets/images/plant8.png',
-        isFavorated: false,
-        decription:
-            'Tanaman Tritonia, yang juga dikenal sebagai Montbretia, adalah tanaman berbunga yang memukau dengan bunga-bunga berbentuk terompet yang cerah dan beraneka warna, seperti merah, kuning, dan oranye.',
-        isSelected: false),
-    Plant(
-        plantId: 8,
-        price: 46,
-        category: 'Recommended',
-        plantName: 'Tritonia',
-        size: 'Medium',
-        rating: 4.7,
-        humidity: 46,
-        temperature: '21 - 25',
-        imageURL: 'assets/images/plant1.png',
-        isFavorated: false,
-        decription:
-            'Tanaman Tritonia, yang juga dikenal sebagai Montbretia, adalah tanaman berbunga yang memukau dengan bunga-bunga berbentuk terompet yang cerah dan beraneka warna, seperti merah, kuning, dan oranye.',
-        isSelected: false),
   ];
 
   static List<Plant> getFavoritedPlants() {

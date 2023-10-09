@@ -1,8 +1,5 @@
-// ignore_for_file: sort_child_properties_last
-
 import 'package:flutter/material.dart';
 import 'package:plant_app/guide.dart';
-
 import 'package:plant_app/ui/page/root_page.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -63,11 +60,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 title: Guide.titleTwo,
                 descriptions: Guide.descriptionTwo,
               ),
-              CreatePage(
-                image: "assets/images/plant-three.png",
-                title: Guide.titleThree,
-                descriptions: Guide.descriptionThree,
-              ),
             ],
           ),
           Positioned(
@@ -84,9 +76,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: IconButton(
                 onPressed: () {
                   setState(() {
-                    if (currentIndex < 2) {
+                    if (currentIndex < 1) {
                       currentIndex++;
-                      if (currentIndex < 3) {
+                      if (currentIndex < 2) {
                         _pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
                             curve: Curves.easeIn);
@@ -131,7 +123,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   List<Widget> _buildIndicator() {
     List<Widget> indicator = [];
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 2; i++) {
       if (currentIndex == i) {
         indicator.add(_indicator(true));
       } else {
