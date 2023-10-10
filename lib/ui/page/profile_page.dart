@@ -16,7 +16,7 @@ class _ProfilPageState extends State<ProfilPage> {
     return Scaffold(
         body: SingleChildScrollView(
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(15),
         height: size.height,
         width: size.width,
         child: Column(
@@ -43,27 +43,13 @@ class _ProfilPageState extends State<ProfilPage> {
                 child: Column(
                   children: [
                     Text(
-                      "Dafa Rofi",
+                      "Monkey D Luffy",
                       style: TextStyle(color: Guide.secondColor, fontSize: 20),
                     ),
                     Text(
-                      "dafarofi25@gmail.com",
+                      "mokey.d.luffy@gmail.com",
                       style: TextStyle(color: Guide.secondColor),
                     ),
-                    const SizedBox(
-                      child: Column(
-                        children: [
-                          ProfileWidget(
-                              icon: Icons.person, title: "Profil Saya"),
-                          ProfileWidget(icon: Icons.settings, title: "Seting"),
-                          ProfileWidget(
-                              icon: Icons.notifications, title: "Notifikasi"),
-                          ProfileWidget(icon: Icons.chat, title: "FAQs"),
-                          ProfileWidget(
-                              icon: Icons.logout_rounded, title: "Keluar"),
-                        ],
-                      ),
-                    )
                   ],
                 ),
               ),
