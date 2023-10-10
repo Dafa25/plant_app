@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         body: SingleChildScrollView(
       child: Container(
-        color: const Color.fromARGB(255, 235, 235, 235),
+        color: Color.fromARGB(255, 255, 255, 255),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -46,7 +46,8 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                   child: const Text(
                     "Good Morning",
                     style: TextStyle(
@@ -56,7 +57,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 17),
                   child: const Text("Temukan tanaman yang kamu sukai disini"),

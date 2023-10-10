@@ -31,10 +31,10 @@ class _RootPageState extends State<RootPage> {
   ];
 
   List<String> listTitle = [
-    "Home",
-    "Favorite",
-    "Chart",
-    "Profile",
+    "Beranda",
+    "Favorit",
+    "Keranjang",
+    "Profil",
   ];
 
   @override

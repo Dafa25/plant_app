@@ -22,14 +22,14 @@ class _FavoritePageState extends State<FavoritePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: 100,
+                      height: 300,
                       child: Image.asset("assets/images/favorited.png"),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      "Tanaman yang disukai",
+                      "Tambahkan tanaman Kedalam Favorit",
                       style: TextStyle(
                         color: Guide.primaryColor,
                         fontWeight: FontWeight.w300,

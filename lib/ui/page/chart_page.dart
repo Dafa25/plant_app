@@ -22,14 +22,14 @@ class _ChartPageState extends State<ChartPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: 100,
+                      height: 300,
                       child: Image.asset("assets/images/add-cart.png"),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      "Your chart is empty",
+                      "Tambahkan tanaman kedalam keranjang",
                       style: TextStyle(
                         color: Guide.primaryColor,
                         fontWeight: FontWeight.w300,

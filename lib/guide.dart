@@ -5,13 +5,12 @@ class Guide {
   static var primaryColor = const Color(0xff296e48);
   static var secondColor = Colors.black54;
   // Onboarding text
-  static var titleOne = "Learn more about plants";
+  static var titleOne = "Mau tahu lebih banyak tentang tanaman?";
   static var descriptionOne =
-      "Read how to care for plants in our rich plants guide.";
-  static var titleTwo = "Find a plant lover friend";
-  static var descriptionTwo =
-      "Are you a plant lover? Connect with other plant lovers.";
-  static var titleThree = "Plant a tree, green the Earth";
+      "Baca panduan lengkap kami tentang cara merawat tanaman di sini.";
+  static var titleTwo = "Mencari teman pecinta tanaman";
+  static var descriptionTwo = "Apakah Anda seorang pecinta tanaman?";
+  static var titleThree = "Menanam pohon, hijaukan bumi.";
   static var descriptionThree =
-      "Find almost all types of plants that you like here.";
+      "Temukan hampir semua jenis tanaman yang Anda sukai di sini.";
 }
