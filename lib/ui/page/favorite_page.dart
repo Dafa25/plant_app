@@ -21,19 +21,23 @@ class _FavoritePageState extends State<FavoritePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Expanded(
+                      child: SizedBox(
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Image.asset("assets/images/favorited.png"),
+                        ),
+                      ),
+                    ),
                     SizedBox(
-                      height: 300,
-                      child: Image.asset("assets/images/favorited.png"),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Tambahkan tanaman Kedalam Favorit",
-                      style: TextStyle(
-                        color: Guide.primaryColor,
-                        fontWeight: FontWeight.w300,
-                        fontSize: 17,
+                      height: 100,
+                      child: Text(
+                        "Tambahkan tanaman Kedalam Favorit",
+                        style: TextStyle(
+                          color: Guide.primaryColor,
+                          fontWeight: FontWeight.w300,
+                          fontSize: 17,
+                        ),
                       ),
                     ),
                   ],

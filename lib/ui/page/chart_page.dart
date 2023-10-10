@@ -21,19 +21,21 @@ class _ChartPageState extends State<ChartPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Expanded(
+                      child: SizedBox(
+                        height: 300,
+                        child: Image.asset("assets/images/add-cart.png"),
+                      ),
+                    ),
                     SizedBox(
-                      height: 300,
-                      child: Image.asset("assets/images/add-cart.png"),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Tambahkan tanaman kedalam keranjang",
-                      style: TextStyle(
-                        color: Guide.primaryColor,
-                        fontWeight: FontWeight.w300,
-                        fontSize: 17,
+                      height: 100,
+                      child: Text(
+                        "Tambahkan tanaman kedalam keranjang",
+                        style: TextStyle(
+                          color: Guide.primaryColor,
+                          fontWeight: FontWeight.w300,
+                          fontSize: 17,
+                        ),
                       ),
                     ),
                   ],

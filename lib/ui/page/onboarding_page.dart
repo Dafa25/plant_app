@@ -62,44 +62,50 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
             ],
           ),
-          Positioned(
-            bottom: 80,
-            left: 30,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 90, right: 25, left: 25),
             child: Row(
-              children: _buildIndicator(),
-            ),
-          ),
-          Positioned(
-            bottom: 60,
-            right: 30,
-            child: Container(
-              child: IconButton(
-                onPressed: () {
-                  setState(() {
-                    if (currentIndex < 1) {
-                      currentIndex++;
-                      if (currentIndex < 2) {
-                        _pageController.nextPage(
-                            duration: const Duration(milliseconds: 300),
-                            curve: Curves.easeIn);
-                      }
-                    } else {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (_) => const RootPage()));
-                    }
-                  });
-                },
-                icon: const Icon(
-                  Icons.arrow_forward_ios,
-                  size: 24,
-                  color: Colors.white,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  child: Row(
+                    children: _buildIndicator(),
+                  ),
                 ),
-              ),
-              padding: const EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Guide.primaryColor,
-              ),
+                SizedBox(
+                  child: Container(
+                    child: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          if (currentIndex < 1) {
+                            currentIndex++;
+                            if (currentIndex < 2) {
+                              _pageController.nextPage(
+                                  duration: const Duration(milliseconds: 300),
+                                  curve: Curves.easeIn);
+                            }
+                          } else {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => const RootPage()));
+                          }
+                        });
+                      },
+                      icon: const Icon(
+                        Icons.arrow_forward_ios,
+                        size: 24,
+                        color: Colors.white,
+                      ),
+                    ),
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Guide.primaryColor,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
@@ -147,40 +153,43 @@ class CreatePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(left: 50, right: 50, bottom: 80),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(
-            height: 350,
-            child: Image.asset(image),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 30,
-                color: Guide.primaryColor,
-                fontWeight: FontWeight.w600),
-          ),
-          const SizedBox(height: 20),
-          Text(
-            descriptions,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w400,
-              color: Guide.secondColor,
+    return SingleChildScrollView(
+      controller: ScrollController(),
+      child: Container(
+        padding: const EdgeInsets.only(left: 50, right: 50, bottom: 250),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 200,
+              child: Image.asset(image),
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-        ],
+            const SizedBox(
+              height: 5,
+            ),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Guide.primaryColor,
+                  fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              descriptions,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Guide.secondColor,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+          ],
+        ),
       ),
     );
   }

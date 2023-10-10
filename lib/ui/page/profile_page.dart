@@ -38,38 +38,36 @@ class _ProfilPageState extends State<ProfilPage> {
             const SizedBox(
               height: 10,
             ),
-            SizedBox(
-              width: size.width * .2,
-              child: Row(
-                children: [
-                  Text(
-                    "Dafa Rofi",
-                    style: TextStyle(color: Guide.secondColor, fontSize: 20),
-                  ),
-                ],
+            Expanded(
+              child: SizedBox(
+                child: Column(
+                  children: [
+                    Text(
+                      "Dafa Rofi",
+                      style: TextStyle(color: Guide.secondColor, fontSize: 20),
+                    ),
+                    Text(
+                      "dafarofi25@gmail.com",
+                      style: TextStyle(color: Guide.secondColor),
+                    ),
+                    const SizedBox(
+                      child: Column(
+                        children: [
+                          ProfileWidget(
+                              icon: Icons.person, title: "Profil Saya"),
+                          ProfileWidget(icon: Icons.settings, title: "Seting"),
+                          ProfileWidget(
+                              icon: Icons.notifications, title: "Notifikasi"),
+                          ProfileWidget(icon: Icons.chat, title: "FAQs"),
+                          ProfileWidget(
+                              icon: Icons.logout_rounded, title: "Keluar"),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
-            Text(
-              "dafarofi25@gmail.com",
-              style: TextStyle(color: Guide.secondColor),
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            SizedBox(
-              height: size.height * .7,
-              width: size.width,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  ProfileWidget(icon: Icons.person, title: "Profil Saya"),
-                  ProfileWidget(icon: Icons.settings, title: "Seting"),
-                  ProfileWidget(icon: Icons.notifications, title: "Notifikasi"),
-                  ProfileWidget(icon: Icons.chat, title: "FAQs"),
-                  ProfileWidget(icon: Icons.logout_rounded, title: "Keluar"),
-                ],
-              ),
-            )
           ],
         ),
       ),

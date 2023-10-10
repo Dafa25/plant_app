@@ -13,34 +13,36 @@ class ProfileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 18),
+      padding: const EdgeInsets.symmetric(vertical: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              Icon(
-                icon,
-                color: Guide.secondColor,
-                size: 24,
-              ),
-              const SizedBox(
-                width: 16,
-              ),
-              Text(
-                title,
-                style: TextStyle(
+          Expanded(
+            child: Row(
+              children: [
+                Icon(
+                  icon,
                   color: Guide.secondColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
+                  size: 15,
                 ),
-              ),
-            ],
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: Guide.secondColor,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
           ),
           Icon(
             Icons.arrow_forward_ios,
             color: Guide.secondColor,
-            size: 16,
+            size: 15,
           )
         ],
       ),
